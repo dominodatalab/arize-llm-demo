@@ -596,7 +596,7 @@ def generate_dashboard_png(output_dir: Path) -> Optional[Path]:
         df = pull_arize_data(api, space, model, days_back)
     if df is None or df.empty:
         # deterministic fallback
-        df = pd.Dataframe()
+        df = pd.DataFrame()
 
     df = clean(df)
     fig = build_dashboard(df)
