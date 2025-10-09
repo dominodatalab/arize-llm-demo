@@ -30,11 +30,6 @@ secondaryBackgroundColor = "#FAFAFA"
 textColor = "#2E2E38"
 EOF
 
-cat > .streamlit/pages.toml <<EOF
-[[pages]]
-path = "fraud_detection.py"
-name = "Fraud Detection"
-EOF
 
 # Generate and display the Streamlit URL
 if [ -n "${DOMINO_RUN_HOST_PATH:-}" ]; then
